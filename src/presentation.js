@@ -15,8 +15,7 @@ import {
   List,
   ListItem,
   Layout,
-  Fill,
-  CodePane
+  Fill
 } from 'spectacle';
 
 import Terminal from "spectacle-terminal";
@@ -27,6 +26,7 @@ import imgCros     from './images/crocs.jpg';
 import imgDrova    from './images/drova.jpg';
 import imgPlugins  from './images/plugins.jpg';
 
+import imgStolovka       from './images/stolovka.jpg';
 import imgStolovka1      from './images/stolovka1.jpg';
 import imgProjTree       from './images/projTree.jpg';
 import imgProjTreeSrc    from './images/projTreeSrc.jpg';
@@ -252,6 +252,9 @@ export default class Presentation extends React.Component {
               </List>
             </Fill>
           </Layout>
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <Image src={ imgStolovka }/>
         </Slide>
       </Deck>
     );
