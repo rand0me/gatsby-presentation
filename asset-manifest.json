@@ -1,11 +1,17 @@
 {
   "main.css": "static/css/main.653da357.css",
   "main.css.map": "static/css/main.653da357.css.map",
-  "main.js": "static/js/main.c84f494d.js",
-  "main.js.map": "static/js/main.c84f494d.js.map",
+  "main.js": "static/js/main.42177d4b.js",
+  "main.js.map": "static/js/main.42177d4b.js.map",
   "static/media/crocs.jpg": "static/media/crocs.8bb9f109.jpg",
   "static/media/drova.jpg": "static/media/drova.6c77ebbc.jpg",
+  "static/media/ghpages.png": "static/media/ghpages.a2cc9a03.png",
+  "static/media/gitlab.png": "static/media/gitlab.482bc49b.png",
+  "static/media/graphql.jpg": "static/media/graphql.8961b557.jpg",
+  "static/media/netlify.jpg": "static/media/netlify.0238e9f8.jpg",
   "static/media/plugins.jpg": "static/media/plugins.19f51d1a.jpg",
+  "static/media/projTree.jpg": "static/media/projTree.da76b3cf.jpg",
+  "static/media/projTreePublic.jpg": "static/media/projTreePublic.fcfcf332.jpg",
   "static/media/stolovka1.jpg": "static/media/stolovka1.3aae0517.jpg",
   "static/media/stop-prog.jpg": "static/media/stop-prog.154e336e.jpg"
 }
