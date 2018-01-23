@@ -86,12 +86,6 @@ export default class Presentation extends React.Component {
         <Slide transition={['fade']}>
           <Image src={ imgStopProg } />
         </Slide>
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading fit caps size={1} textColor="secondary">
-            GATSBY
-          </Heading>
-          <Text textColor="primary">Blazing-fast static site generator for React</Text>
-        </Slide>
         <Slide transition={['fade']} bgColor="tertiary" textColor="secondary">
           <Heading size={2} fit textColor="secondary" caps>
             JAM Stack
@@ -120,6 +114,12 @@ export default class Presentation extends React.Component {
               Prebuilt <S type="underline,bold">M</S>arkup
             </Heading>
           </Appear>
+        </Slide>
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading fit caps size={1} textColor="secondary">
+            GATSBY
+          </Heading>
+          <Text textColor="primary">Blazing-fast static site generator for React</Text>
         </Slide>
         <Slide transition={['fade']} bgColor="secondary">
           <Terminal title="[rand0me@rand0me-pc ~]" output={[
@@ -343,7 +343,7 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>hasura.io</ListItem></Appear>
             <Appear><ListItem>blockspring.com</ListItem></Appear>
             <Appear><ListItem>backendless.com</ListItem></Appear>
-            <Appear><ListItem>Google Froms + Google Sheets</ListItem></Appear>
+            <Appear><ListItem>Google Forms + Google Sheets</ListItem></Appear>
             <Appear><ListItem>https://github.com/ripienaar/free-for-dev</ListItem></Appear>
           </List>
         </Slide>
@@ -385,6 +385,7 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>React <S type="bold">16</S>?</ListItem></Appear>
             <Appear><ListItem>Preact? Nerv? Inferno?</ListItem></Appear>
             <Appear><ListItem>Mo Plugins?</ListItem></Appear>
+            <Appear><ListItem>Magic</ListItem></Appear>
             <Appear><ListItem>Atomic deployment :(</ListItem></Appear>
             <Appear><ListItem>Atomic deployment :(</ListItem></Appear>
             <Appear><ListItem>Atomic deployment :(</ListItem></Appear>
