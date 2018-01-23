@@ -334,7 +334,7 @@ export default class Presentation extends React.Component {
           </Layout>
         </Slide>
         <Slide transition={['fade']} bgColor="tertiary">
-          <Heading caps fit textColor="secondary">Не люблю Email/Slack/Webhooks</Heading>
+          <Heading caps fit textColor="secondary">Не люблю Email/Slack/Webhooks!</Heading>
           <List>
             <Appear><ListItem>uvdesk.com / typeform.com</ListItem></Appear>
             <Appear><ListItem>jotform.com (+ Payments)</ListItem></Appear>
@@ -348,7 +348,64 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
         <Slide transition={['fade']} bgColor="secondary">
+          <Heading fit caps textColor="tertiary">Кому это надо?</Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <Image src={ require('./images/sites-reasonml.jpg') } />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="secondary">
+          <Image src={ require('./images/sites-fabric.jpg') } />
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <Image src={ require('./images/sites-formidable.jpg') } />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="secondary">
+          <Image src={ require('./images/sites-graphcms.jpg') } />
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <Image src={ require('./images/sites-reactjs.jpg') } />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="secondary">
+          <Image src={ require('./images/sites-yerevancoder.jpg') } />
+        </Slide>
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading fit caps textColor="secondary">А как же другие?</Heading>
+          <List>
+            <Appear><ListItem textSize="1em">Jekyll (jekyllrb.com), Hugo (gohugo.io)</ListItem></Appear>
+            <Appear><ListItem textSize="1em">Hexo (hexo.io), Assemble (assemble.io), Others...</ListItem></Appear>
+            <Appear><ListItem textSize="1em">Phenomic (phenomic.io)</ListItem></Appear>
+            <Appear><ListItem textSize="1em">Tipe (tipe.io)</ListItem></Appear>
+            <Appear><Text textSize="1em" margin="2em auto">https://github.com/myles/awesome-static-generators</Text></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading fit caps textColor="secondary">ПОПАХИВАЕТ ПАНАЦЕЕЙ?</Heading>
+          <List>
+            <Appear><ListItem>Как же я люблю эти списки...</ListItem></Appear>
+            <Appear><ListItem>React <S type="bold">16</S>?</ListItem></Appear>
+            <Appear><ListItem>Preact? Nerv? Inferno?</ListItem></Appear>
+            <Appear><ListItem>Mo Plugins?</ListItem></Appear>
+            <Appear><ListItem>Atomic deployment :(</ListItem></Appear>
+            <Appear><ListItem>Atomic deployment :(</ListItem></Appear>
+            <Appear><ListItem>Atomic deployment :(</ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <Text textColor="tertiary" textSize=".9em" margin="2em auto">
+            https://github.com/myles/awesome-static-generators
+          </Text>
+          <Text textColor="tertiary" textSize=".9em" margin="2em auto">
+            https://github.com/b-long/awesome-static-hosting-and-cms
+          </Text>
+          <Text textColor="tertiary" textSize=".9em" margin="2em auto">
+            https://github.com/agarrharr/awesome-static-website-services
+          </Text>
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
           <Image src={ imgStolovka } />
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <Heading fit caps textColor="tertiary">BYE</Heading>
         </Slide>
       </Deck>
     );

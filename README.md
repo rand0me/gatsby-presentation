@@ -1,4 +1,4 @@
-Just Do It (serverless)
+Just Do It 
 =======================
 ![Nike](https://www.mcarthurglen.com/media/93821732/nike.png)
 
@@ -7,7 +7,6 @@ Story telling
 
 ## Main: 20~30min
 * JAMSTACK
-* Welcome to serverless (and who loves it)
 * Why GatsbyJS?
 * OMG GRAPHQL AGAIN
 * Deploy (you ain't need money)
