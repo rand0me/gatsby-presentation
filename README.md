@@ -13,4 +13,13 @@ Story telling
 * Deploy (you ain't need money)
 * How about friendly interface? (spoiler: Contentful CMS)
 
+---------------
+Gatsby Plugins
+Netlify CMS
+SaaS, Leads
+Jekyll, Hexo
+Usage
+Cons & Underwater
+---------------
+
 ## Questions: 5~10min

@@ -15,7 +15,9 @@ import {
   List,
   ListItem,
   Layout,
-  Fill
+  Fill,
+  Code,
+  CodePane
 } from 'spectacle';
 
 import Terminal from "spectacle-terminal";
@@ -35,7 +37,15 @@ import imgGrapQL         from './images/graphql.jpg';
 
 import imgNetlify        from './images/netlify.jpg';
 import imgGhpages        from './images/ghpages.png';
-import imgGitlab         from './images/gitlab.png';
+import imgGitlab         from './images/gitlab.jpg';
+import imgGithub         from './images/github.jpg';
+import imgOtkuda         from './images/otkuda.jpg';
+import imgGraphiql       from './images/graphiql.jpg';
+
+import imgSlojna1 from './images/slojna1.jpg';
+import imgSlojna2 from './images/slojna2.jpg';
+
+import imgNetlifyCMS from './images/netlifycms.jpg';
 
 export default class Presentation extends React.Component {
   render() {
@@ -189,6 +199,26 @@ export default class Presentation extends React.Component {
           { loc: [ 7,  9] }
         ]} />
         <Slide transition={['fade']} bgColor="secondary">
+          <Layout>
+            <Fill>
+              <Image padding="0 1em" src={ imgOtkuda } />
+            </Fill>
+            <Fill>
+              <Heading fit caps>Откуда?</Heading>
+              <List textColor="tertiary">
+                <Appear><ListItem textSize="1em">gatsby-source-filesystem</ListItem></Appear>
+                <Appear><ListItem textSize="1em">gatsby-source-mongodb</ListItem></Appear>
+                <Appear><ListItem textSize="1em">gatsby-source-contentful</ListItem></Appear>
+                <Appear><ListItem textSize="1em">gatsby-source-wordpress</ListItem></Appear>
+                <Appear><ListItem textSize="1em">gatsby-source-drupal</ListItem></Appear>
+              </List>
+            </Fill>
+          </Layout>
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <Image src={ imgGraphiql } />
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
           <Terminal title="[rand0me@rand0me-pc ~]" output={[
             "$ npm run build",
             <div style={{ color: '#aaa' }}>
@@ -217,16 +247,56 @@ export default class Presentation extends React.Component {
           { loc: [ 7,  8] },
           { loc: [15, 25] }
         ]} />
+        <Slide transition={['fade']} bgColor="secondary">
+          <Heading fit caps>И всё?</Heading>
+          <List textColor="tertiary">
+            <Appear><ListItem textSize="1em">gatsby-plugin-preact</ListItem></Appear>
+            <Appear><ListItem textSize="1em">gatsby-plugin-coffeescript</ListItem></Appear>
+            <Appear><ListItem textSize="1em">gatsby-plugin-offline</ListItem></Appear>
+            <Appear><ListItem textSize="1em">gatsby-plugin-sitemap</ListItem></Appear>
+            <Appear><ListItem textSize="1em">gatsby-plugin-google-analytics</ListItem></Appear>
+            <Appear><ListItem textSize="1em">gatsby-plugin-twitter</ListItem></Appear>
+            <Appear><ListItem textSize="1em">gatsby-plugin-glamor</ListItem></Appear>
+          </List>
+          <Appear>
+            <CodePane lang="javascript" source={ gatsbyPluginExample }/>
+          </Appear>
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <Layout>
+            <Fill><Image src={ imgSlojna1 } /></Fill>
+            <Fill><Image src={ imgSlojna2 } /></Fill>
+          </Layout>
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <Heading caps fit>Gatsby starter packs</Heading>
+          <List textColor="tertiary">
+            <Appear><ListItem textSize="1em">gatsby-starter-blog</ListItem></Appear>
+            <Appear><ListItem textSize="1em">gatsby-material-start (Disqus, Offline, SEO, GA)</ListItem></Appear>
+            <Appear><ListItem textSize="1em">gatsby-starter-bootstrap</ListItem></Appear>
+            <Appear><ListItem textSize="1em">HTML5UP Templates</ListItem></Appear>
+            <Appear><ListItem textSize="1em">https://www.gatsbyjs.org/docs/gatsby-starters/</ListItem></Appear>
+          </List>
+        </Slide>
         <Slide transition={['fade']} bgColor="tertiary">
           <Heading fit caps textColor="primary">Круто</Heading>
           <Heading fit caps textColor="secondary">Давай Впрод</Heading>
         </Slide>
         <Slide transition={['fade']} bgColor="tertiary">
-          <Image src={ imgNetlify } />
-          <Image src={ imgGhpages } />
+          <Heading caps fit textColor="secondary">Free Static Site Hostings</Heading>
+          <List>
+            <Appear><ListItem textSize="1em">GitHub Pages</ListItem></Appear>
+            <Appear><ListItem textSize="1em">GitLab Pages</ListItem></Appear>
+            <Appear><ListItem textSize="1em">Surge.sh</ListItem></Appear>
+            <Appear><ListItem textSize="1em">Now by Zeit</ListItem></Appear>
+            <Appear><ListItem textSize="1em">BitBalloon by Netlify</ListItem></Appear>
+            <Appear><ListItem textSize="1em">Aerobatics</ListItem></Appear>
+            <Appear><ListItem textSize="1em">Netlify</ListItem></Appear>
+            <Appear><ListItem textSize="1em" textColor="primary">ТЫСЯЧИ ИХ</ListItem></Appear>
+          </List>  
         </Slide>
         <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={3}>Netlify Free Tier</Heading>
+          <Image margin="-2em auto .5rem " src={ imgNetlify } />
           <List>
             <Appear><ListItem>Personal or <S type="bold">commercial</S> projects</ListItem></Appear>
             <Appear><ListItem>Free custom domain</ListItem></Appear>
@@ -239,28 +309,53 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>PROFIT!</ListItem></Appear>
           </List>
         </Slide>
-        <Slide transition={['fade']} bgColor="secondary">
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Image src={ imgNetlifyCMS } />
+        </Slide>
+        <Slide transition={['fade']} bgColor="tertiary">
           <Layout>
-            <Fill><Image src={ imgGitlab } /></Fill>
             <Fill>
-              <List textColor="tertiary">
-                <Appear><ListItem>Создаем проект</ListItem></Appear>
-                <Appear><ListItem>Коммитим</ListItem></Appear>
-                <Appear><ListItem>Авторизуемся в <S type="bold">Netlify</S> с помощью GitLab</ListItem></Appear>
-                <Appear><ListItem>Выбираем проект</ListItem></Appear>
-                <Appear><ListItem>CI/CD работает</ListItem></Appear>
+              <Image src={ imgGitlab } />
+              <Image src={ imgGithub } />
+            </Fill>
+            <Fill>
+              <List>
+                <Appear><ListItem textSize="1em">Создаем проект</ListItem></Appear>
+                <Appear><ListItem textSize="1em">Коммитим</ListItem></Appear>
+                <Appear><ListItem textSize="1em">Авторизуемся в <S type="bold">Netlify</S> с помощью GitHub/GitLab</ListItem></Appear>
+                <Appear><ListItem textSize="1em">Выбираем проект</ListItem></Appear>
+                <Appear><ListItem textSize="1em">CI/CD работает</ListItem></Appear>
+                <Appear><ListItem textSize="1em">Build + Deploy на агентах Netlify</ListItem></Appear>
+                <Appear><ListItem textSize="1em">Deploy отдельных веток для тестирования</ListItem></Appear>
+                <Appear><ListItem textSize="1em">Отправка форм в Slack, WebHook, Email</ListItem></Appear>
+                <Appear><ListItem textSize="1em">[ALPHA] Lambda Functions w/o AWS</ListItem></Appear>
               </List>
             </Fill>
           </Layout>
         </Slide>
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading caps fit textColor="secondary">Не люблю Email/Slack/Webhooks</Heading>
+          <List>
+            <Appear><ListItem>uvdesk.com / typeform.com</ListItem></Appear>
+            <Appear><ListItem>jotform.com (+ Payments)</ListItem></Appear>
+            <Appear><ListItem>mailchimp.com / sendgrid.com</ListItem></Appear>
+            <Appear><ListItem>algolia.com</ListItem></Appear>
+            <Appear><ListItem>hasura.io</ListItem></Appear>
+            <Appear><ListItem>Google Froms + Google Sheets</ListItem></Appear>
+            <Appear><ListItem>https://github.com/ripienaar/free-for-dev</ListItem></Appear>
+          </List>
+        </Slide>
         <Slide transition={['fade']} bgColor="secondary">
-          <Image src={ imgStolovka }/>
+          <Image src={ imgStolovka } />
         </Slide>
       </Deck>
     );
   }
 }
 
+const gatsbyPluginExample = 
+`// In your gatsby-config.js
+plugins: [\`gatsby-transformer-json\`];`;
 
 const gatsbyLayoutExample = `import React from 'react'
 import PropTypes from 'prop-types'
