@@ -341,6 +341,8 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>mailchimp.com / sendgrid.com</ListItem></Appear>
             <Appear><ListItem>algolia.com</ListItem></Appear>
             <Appear><ListItem>hasura.io</ListItem></Appear>
+            <Appear><ListItem>blockspring.com</ListItem></Appear>
+            <Appear><ListItem>backendless.com</ListItem></Appear>
             <Appear><ListItem>Google Froms + Google Sheets</ListItem></Appear>
             <Appear><ListItem>https://github.com/ripienaar/free-for-dev</ListItem></Appear>
           </List>
