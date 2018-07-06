@@ -1,5 +1,8 @@
 Just Do It 
 =======================
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/rand0me/gatsby-presentation.svg)](https://greenkeeper.io/)
+
 ![Nike](https://www.mcarthurglen.com/media/93821732/nike.png)
 
 ## Prelude: 5~10min
